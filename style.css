@@ -487,6 +487,8 @@ span{
     object-fit: cover;
     filter: url(#noise);
     overflow: hidden;
+    z-index: 2;
+    opacity: 0;
 }
 
 /* ------------PreLoader Site Reveal---------- */

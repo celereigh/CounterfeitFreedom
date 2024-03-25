@@ -117,6 +117,11 @@ window.onload=function(){
     $('#Group1').click(playPoem);
     $('#Circle1').click(hidePoem);
 
+    // function showAnimatedBG(){
+    //     $('.filter').css('opacity','100')
+    // }
+    // $('#Circle1').hover(showAnimatedBG);
+
 
  // POEM 1.2----------------------------
     function playPoemOnePointTwo(){
