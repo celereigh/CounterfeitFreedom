@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    background: #ffffff;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.website-content{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.navbar {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 4em;
+}
+.navbar > * {
+    position: fixed;
+}
+.topTitle {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 35px;
+    opacity:100%;
+    color: #000000;
+    cursor: pointer;
+
+}
+
+
+#Legend {
+    position:absolute;
+    z-index: 1;
+    width: 150vh;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+.legend-button{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    font-size:25px;
+    color:rgb(0, 0, 0);
+    border:1px solid rgb(0, 0, 0);
+    padding:15px;
+    border-radius:150px;
+    cursor:pointer;
+}
+.legend-button:hover{
+    color:rgb(255, 255, 255);
+    background:rgb(0, 0, 255);
+    border:1px solid rgb(0, 0, 255);
+    box-shadow: 0px 0px 20px 0px blue;
+
+}
+
+
+#Layer_1 {
+    position:absolute;
+    z-index: 1;
+    overflow: visible;
+    width: 60vh;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+#Layer_3 {
+    position:absolute;
+    z-index: 1;
+    overflow: visible;
+    width: 60.5vh;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+/* LANDING PAGE blue connections */
+#Line1 {
+    opacity: 0;
+}
+#Line1-2 {
+    opacity: 0;
+}
+#Line2 {
+    opacity: 0;
+}
+#Line3 {
+    opacity: 0;
+}
+#Line3-2 {
+    opacity: 0;
+}
+#Line4 {
+    opacity: 0;
+}
+#Line5 {
+    opacity: 0;
+}
+#Line5-2 {
+    opacity: 0;
+}
+
+/* circle colours */
+.cls-1 {
+    fill: blue;
+}
+.cls-2 {
+    fill: #f6f4f1;
+    opacity: 0;
+    cursor: pointer;
+}
+.cls-3 {
+    fill: #231f20;
+    cursor: pointer;
+}
+.cls-4 {
+    fill: #231f20;
+}
+.cls-5 {
+    fill: #231f20;
+
+}
+.cls-6 {
+    fill: #ffffff;
+}
+.cls-a {
+    fill: #231f20;
+}
+
+/* ------------LANDING PAGE number fill colour---------------- */
+#Group1 {
+    fill: #231f20;
+}
+#Group1-2 {
+    fill: #231f20;
+}
+#Group2 {
+    fill: #231f20;
+}
+#Group3 {
+    fill: #231f20;
+}
+#Group3-2 {
+    fill: #231f20;
+}
+#Group4 {
+    fill: #231f20;
+}
+#Group5 {
+    fill: #231f20;
+}
+#Group5-2 {
+    fill: #231f20;
+}
+#Group5-3 {
+    fill: #231f20;
+}
+#Group6 {
+    fill: #231f20;
+}
+
+/* ------------LANDING PAGE Groups Hover---------- */
+.cls-3:hover {
+    fill: blue;
+}
+#Group1:hover {
+    fill: blue;
+}
+#Group2:hover {
+    fill: blue;
+}
+#Group3:hover {
+    fill: blue;
+}
+#Group4:hover {
+    fill: blue;
+}
+#Group5:hover {
+    fill: blue;
+}
+#Group6:hover {
+    fill: blue;
+}
+/* ------------LANDING PAGE PartGroups Hover---------- */
+#Group1-2:hover {
+    fill: blue;
+}
+#CircleFill:hover {
+    fill: blue;
+    opacity: 100%;
+}
+#Group3-2:hover {
+    fill: blue;
+}
+#CircleFill-2:hover {
+    fill: blue;
+    opacity: 100%;
+}
+#Group5-2:hover {
+    fill: blue;
+}
+#CircleFill-3:hover {
+    fill: blue;
+    opacity: 100%;
+}
+#Group5-3:hover {
+    fill: blue;
+}
+#CircleFill-4:hover {
+    fill: blue;
+    opacity: 100%;
+}
+
+/* ------------White Version SVGs---------- */
+#Circle1 {
+    cursor: pointer;
+}
+#Circle1-2 {
+    cursor: pointer;
+}
+#Circle2 {
+    cursor: pointer;
+}
+#Circle3 {
+    cursor: pointer;
+}
+#Circle3-2 {
+    cursor: pointer;
+}
+#Circle4 {
+    cursor: pointer;
+}
+#Circle5 {
+    cursor: pointer;
+}
+#Circle5-2 {
+    cursor: pointer;
+}
+#Circle5-3 {
+    cursor: pointer;
+}
+#Circle6 {
+    cursor: pointer;
+}
+
+
+
+.poem{
+    position: absolute;
+    transition:all 200ms;
+    width: auto;
+    height: auto;
+}
+
+/* ------------Random Images---------- */
+.imageWindow{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    position:absolute;
+    width:auto;
+    height:auto;
+    scale: 0.3;
+    padding:17px 20px 20px 20px;
+    text-align:center;    
+    z-index:1;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px blue;
+    background: #ffffff;
+}
+section > img {
+    position: relative;
+    object-fit: cover;
+}
+
+
+/* ------------DISPLAY POEMS Styling---------- */
+.poemStyle {
+    position: fixed;
+    transform:translate(2.5%, 105%);
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 35px;
+    opacity:100%;
+    color: #ffffff;
+}
+.poemStyle-2 {
+    position: fixed;
+    transform:translate(2.5%, 95%);
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 35px;
+    opacity:100%;
+    color: #ffffff;
+}
+.poemStyleShort {
+    position: fixed;
+    transform:translate(2.5%, 260%);
+
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 35px;
+    opacity:100%;
+    color: #ffffff;
+}
+.poemStyleShortish {
+    position: fixed;
+    transform:translate(2.5%, 152%);
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 35px;
+    opacity:100%;
+    color: #ffffff;
+}
+.poemStyleLong {
+    position: fixed;
+    transform:translate(2.5%, 30%);
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 35px;
+    opacity:100%;
+    color: #ffffff;
+}
+.poemStyleLonger {
+    position: fixed;
+    transform:translate(2.5%, 45%);
+
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 35px;
+    opacity:100%;
+    color: #ffffff;
+}
+.poemStyleLongest {
+    position: fixed;
+    transform:translate(2.5%, 10%);
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 35px;
+    opacity:100%;
+    color: #ffffff;
+}
+/* ------------Haiku Styling---------- */
+.playHaiku{
+    padding: 0;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    opacity:100;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: 300ms;
+    width: 0;
+    height: 0;
+}
+.haiku {
+    padding: 0;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    opacity:0;
+    color: blue;
+    z-index: 2;
+    transition: 300ms;
+    width: 0;
+    height: 0;
+}
+.poem2Line1 {
+    position:fixed;
+    transform:translate(2.5vw, 15vh);
+    padding: 0%;
+}
+.poem2Line2 {
+    position: fixed;
+    transform:translate(10vw, 14.5vh);
+    padding: 0%;
+}
+.poem2Line3 {
+    position: fixed;
+    transform:translate(10vw, 16vh);
+    padding: 0%;
+}
+.poem4Line1 {
+    position:fixed;
+    transform:translate(77vw, 69vh);
+    padding: 0%;
+}
+.poem4Line2 {
+    position: fixed;
+    transform:translate(77vw, 68.5vh);
+    padding: 0%;
+}
+.poem4Line3 {
+    position: fixed;
+    transform:translate(70vw, 72vh);
+    padding: 0%;
+}
+
+span{
+    /* font-weight:bold ; */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.play-poem {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    color: #f6f4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+    opacity: 0;
+}
+.play-poem-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter {
+    width: 100vh;
+    height: 100vw;
+    object-fit: cover;
+    filter: url(#noise);
+    overflow: hidden;
+}
+
+/* ------------PreLoader Site Reveal---------- */
+.pre-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    color: #f6f4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.pre-loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pre-loader-text {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 22px;
+    opacity:100%;
+    color: #ffffff; 
+}
+.pre-loader-btn {
+    text-align: center;
+    position: relative;
+    margin: 1em 0 1em 0;
+    cursor:pointer;
+    z-index: 2;
+    opacity: 0%;
+}
+.pre-loader-btn svg {
+    position:relative;
+    width: 50px;
+    top:0;
+    left: 45%;
+    padding: 0, 0.4em;
+}
+
+/* ------------Specifically for Poem 6---------- */
+.anotherContainerIDK {
+    position: fixed;
+    display: none;
+    opacity: 0;
+    z-index: 2; 
+}
+.playSix {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    color: #f6f4f1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.containerSix {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.poemSix {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;   
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 22px;
+    opacity:100%;
+    color: #ffffff;
+}
+.reload-page-btn {
+    text-align: center;
+    position: relative;
+    margin: 1em 0 1em 0;
+    cursor:pointer;
+    z-index: 2;
+    opacity: 0%;
+    top: 0%;
+    left: 40%;
+}
+.reload-page-btn svg {
+    position:relative;
+    width: 50px;
+    top:0;
+    left: 45%;
+    padding: 0, 0.4em;
+}
+
+/* ------------Specifically for Credits---------- */
+.yetAnotherContainerIDK {
+    position: fixed;
+    display: none;
+    opacity: 0;
+    z-index: 2; 
+}
+.poemCredits {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 22px;
+    opacity:100%;
+    color: #ffffff;
+}
+a {
+    /* text-align: left;
+    font-family: 'Times New Roman', Times, serif;    
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 22px;
+    opacity:100%;
+    z-index: 10;
+    */
+    color: #ffffff;
+    text-decoration: none;
+}
+.leave-page-btn {
+    text-align: center;
+    position: relative;
+    margin: 1em 0 1em 0;
+    cursor:pointer;
+    z-index: 2;
+    opacity: 0;
+}
+.leave-page-btn svg {
+    position:relative;
+    width: 50px;
+    top:0;
+    left: 45%;
+    padding: 0, 0.4em;
+}
+
+/* you did this so that the connecting poem would show when you clicked on the spans */
+.playOne-2 {
+    z-index: 3;
+}
+.playTwo {
+    z-index: 3;
+}
+.playFour {
+    z-index: 3;
+}
